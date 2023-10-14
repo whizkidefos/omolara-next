@@ -4,6 +4,7 @@ import Avatar from "../components/Avatar";
 import ProjectsBtn from "../components/ProjectsBtn";
 
 import { fadeIn } from '../variants';
+import ParticlesContainer from "../components/ParticlesContainer";
 
 const Home = () => {
   return (
@@ -44,6 +45,8 @@ const Home = () => {
       {/* Image */}
       <figure className="w-[1200px] h-full absolute right-0 bottom-0">
         <div className="absolute w-full h-full bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat mix-blend-color-dodge translate-z-0"></div>
+
+        <ParticlesContainer />
 
         <motion.div 
           variants={fadeIn('up', 0.5)} 
